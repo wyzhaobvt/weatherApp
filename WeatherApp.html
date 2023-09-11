@@ -51,8 +51,8 @@
             let city_name = document.getElementById('city').value;
             let url;
             (city_name) === /^([0-9]{5})/? 
-            url = `https://api.openweathermap.org/data/2.5/weather?zip=${city_name}&appid=e4bd0ccadd67bd5d9092e47530fea070`: 
-            url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=e4bd0ccadd67bd5d9092e47530fea070`
+            url = `https://api.openweathermap.org/data/2.5/weather?zip=${city_name}&appid=93f26e3c57081a6210de53b8dcfdfea4`: 
+            url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=93f26e3c57081a6210de53b8dcfdfea4`
             
             await fetch(url)
             .then((weather)=>{return weather.json()})
@@ -180,8 +180,8 @@
             let city_name = document.getElementById('city').value;
             let url;
             (city_name) === /^([0-9]{5})/? 
-            url = `https://api.openweathermap.org/data/2.5/forecast?zip=${city_name}&appid=e4bd0ccadd67bd5d9092e47530fea070`: 
-            url = `https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&appid=e4bd0ccadd67bd5d9092e47530fea070`;
+            url = `https://api.openweathermap.org/data/2.5/forecast?zip=${city_name}&appid=93f26e3c57081a6210de53b8dcfdfea4`: 
+            url = `https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&appid=93f26e3c57081a6210de53b8dcfdfea4`;
             
             await fetch(url)
             .then((response)=>response.json())
